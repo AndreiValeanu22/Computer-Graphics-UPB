@@ -24,3 +24,7 @@ cmake-build-*/
 # Binare locale Tema 1
 Tema_1/Tema1Launcher
 Tema_1/Tema1Launcher.exe
+
+# macOS junk
+.DS_Store
+__MACOSX/
