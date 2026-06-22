@@ -63,15 +63,6 @@ Detalii: [Tema_3/README.md](Tema_3/README.md)
 
 ---
 
-## Ce nu este pe GitHub
-
-- Arhive `.zip` / `.rar`
-- Folderul complet **gfx-framework** (motorul cursului — doar sursele mele pentru Tema 2/3)
-- Build-uri Visual Studio (`build/`, `.vs/`), executabile
-- `IMPORTANT.txt` și note personale locale
-
----
-
 ## Licență
 
-Cod propriu — teme academice **UPB ACS / EGC**. Poți folosi repo-ul ca portofoliu; menționează cursul dacă refolosești structura.
+Cod propriu — teme academice **UPB ACS / EGC**.
