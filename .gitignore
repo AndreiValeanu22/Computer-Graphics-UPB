@@ -1,0 +1,26 @@
+﻿# Arhive
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Build
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+build/
+out/
+.vs/
+.idea/
+cmake-build-*/
+
+# Nested git
+**/.git/
+
+# Binare locale Tema 1
+Tema_1/Tema1Launcher
+Tema_1/Tema1Launcher.exe
