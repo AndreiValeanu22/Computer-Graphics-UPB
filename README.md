@@ -1,24 +1,24 @@
-﻿# Computer-Graphics-UPB â€” Elemente de GraficÄƒ pe Calculator (UPB ACS)
+﻿# Computer-Graphics-UPB — Elemente de Grafică pe Calculator (UPB ACS)
 
-Proiecte personale pentru cursul **EGC** (Elemente de GraficÄƒ pe Calculator), Anul 3 **CB**, an universitar **2025â€“2026**.
+Proiecte personale pentru cursul **EGC** (Elemente de Grafică pe Calculator), Anul 3 **CB**, an universitar **2025–2026**.
 
-| Folder | TemÄƒ oficialÄƒ | Tehnologii |
+| Folder | Temă oficială | Tehnologii |
 |--------|---------------|------------|
 | [**Tema_1**](Tema_1/) | Mini-jocuri 2D + launcher | C++, OpenGL, GLFW, GLEW, GLUT |
 | [**Tema_2**](Tema_2/) | **Train Geeks** | C++, OpenGL 3D, gfx-framework UPB |
-| [**Tema_3**](Tema_3/) | **Firefly Forest** (temÄƒ suplimentarÄƒ) | C++, shadere GLSL, gfx-framework UPB |
+| [**Tema_3**](Tema_3/) | **Firefly Forest** (temă suplimentară) | C++, shadere GLSL, gfx-framework UPB |
 
 ---
 
-## Tema 1 â€” Launcher mini-jocuri 2D (standalone)
+## Tema 1 — Launcher mini-jocuri 2D (standalone)
 
 **Ce am implementat:**
-- **Editor navÄƒ** â€” construieÈ™ti nava din componente; o poÈ›i trimite Ã®n Chicken Invaders
-- **Breakout** â€” paletÄƒ, minge, cÄƒrÄƒmizi, particule
-- **Chicken Invaders** â€” navÄƒ personalizabilÄƒ, inamici, proiectile
-- **Pong** â€” 2 jucÄƒtori, coliziuni
+- **Editor navă** — construiești nava din componente; o poți trimite în Chicken Invaders
+- **Breakout** — paletă, minge, cărămizi, particule
+- **Chicken Invaders** — navă personalizabilă, inamici, proiectile
+- **Pong** — 2 jucători, coliziuni
 
-**Rulare** (proiect independent, **nu** foloseÈ™te gfx-framework):
+**Rulare** (proiect independent, **nu** folosește gfx-framework):
 
 ```bash
 cd Tema_1
@@ -26,38 +26,38 @@ g++ -std=c++17 MainLauncher.cpp src/*.cpp -Iinclude -lglfw -lGL -lGLEW -lGLU -lg
 ./Tema1Launcher
 ```
 
-**Controale launcher:** F1 Editor Â· F2 Breakout Â· F3 Chicken Invaders Â· F4 Pong Â· ESC ieÈ™ire
+**Controale launcher:** F1 Editor · F2 Breakout · F3 Chicken Invaders · F4 Pong · ESC ieșire
 
 ---
 
-## Tema 2 â€” Train Geeks (gfx-framework)
+## Tema 2 — Train Geeks (gfx-framework)
 
 **Ce am implementat:**
-- HartÄƒ pe grilÄƒ cu relief: cÃ¢mpie (verde), rÃ¢u (albastru), munte (maro)
-- È˜ine: drepte, colÈ›uri, pod, tunel; unelte de editare pe grilÄƒ
-- Tren (locomotivÄƒ + vagoane) construit din primitive 3D; miÈ™care automatÄƒ pe È™ine cu interpolare
-- GÄƒri/staÈ›ii; shadere custom: **Terrain**, **GhostTrail**
-- FiÈ™iere: `tema2.cpp`, `tema2.h`, `object3D.cpp`, shadere Ã®n `shaders/`
+- Hartă pe grilă cu relief: câmpie (verde), râu (albastru), munte (maro)
+- Șine: drepte, colțuri, pod, tunel; unelte de editare pe grilă
+- Tren (locomotivă + vagoane) construit din primitive 3D; mișcare automată pe șine cu interpolare
+- Gări/stații; shadere custom: **Terrain**, **GhostTrail**
+- Fișiere: `tema2.cpp`, `tema2.h`, `object3D.cpp`, shadere în `shaders/`
 
-**Rulare:** copiazÄƒ folderul Ã®n `src/lab_m1/Tema2/` din [gfx-framework](https://github.com/UPB-Graphics-Framework/gfx-framework), decomenteazÄƒ `#include` Ã®n `lab_list.h` È™i `World* world = new m1::Tema2();` Ã®n `main.cpp`, apoi build `GFXFramework`.
+**Rulare:** copiază folderul în `src/lab_m1/Tema2/` din [gfx-framework](https://github.com/UPB-Graphics-Framework/gfx-framework), decomentează `#include` în `lab_list.h` și `World* world = new m1::Tema2();` în `main.cpp`, apoi compilează `GFXFramework`.
 
-**Termen curs:** 14 decembrie 2025, 23:59 (BucureÈ™ti) Â· ~3 sÄƒptÄƒmÃ¢ni
+**Termen curs:** 14 decembrie 2025, 23:59 (București) · ~3 săptămâni
 
 Detalii: [Tema_2/README.md](Tema_2/README.md)
 
 ---
 
-## Tema 3 â€” Firefly Forest (gfx-framework, suplimentar)
+## Tema 3 — Firefly Forest (gfx-framework, suplimentar)
 
 **Ce am implementat:**
-- PÄƒdure nocturnÄƒ: teren texturat, copaci (trunchi cilindric + frunziÈ™ pe nivele)
-- **Licurici** emisivi pe orbite; **turn de observaÈ›ie** (stalpi, platformÄƒ, acoperiÈ™ con)
-- **CeaÈ›Äƒ** exponenÈ›ialÄƒ; **light cookies** pe spotlights
-- Shadere custom: animaÈ›ie vÃ¢nt Ã®n vertex shader (`Shaders/VertexShader.glsl`, `FragmentShader.glsl`)
+- Pădure nocturnă: teren texturat, copaci (trunchi cilindric + frunziș pe nivele)
+- **Licurici** emisivi pe orbite; **turn de observație** (stâlpi, platformă, acoperiș conic)
+- **Ceață** exponențială; **light cookies** pe spotlights
+- Shadere custom: animație de vânt în vertex shader (`Shaders/VertexShader.glsl`, `FragmentShader.glsl`)
 
-**Rulare:** la fel ca Tema 2, dar scena `m1::Tema3` Ã®n `main.cpp`. NecesitÄƒ texturi Ã®n `Tema_3/textures/` (`bark.jpg`, `leaves.jpg`, `wood_planks.png`, `grass.jpeg`, `wood.jpg`) â€” pe repo sunt incluse doar `cone.obj` È™i `cylinder.obj`; restul texturilor le adaugi local din materialele cursului.
+**Rulare:** la fel ca Tema 2, dar cu scena `m1::Tema3` în `main.cpp`. Texturile sunt incluse în `Tema_3/textures/` (`bark.jpg`, `leaves.jpg`, `wood_planks.png`, `grass.jpeg`, `wood.jpg`). Modelele `cone.obj` și `cylinder.obj` trebuie adăugate local (sunt furnizate de framework).
 
-**Termen curs:** 18 ianuarie 2026, 23:59 (BucureÈ™ti) Â· temÄƒ suplimentarÄƒ Â· ~3 sÄƒptÄƒmÃ¢ni
+**Termen curs:** 18 ianuarie 2026, 23:59 (București) · temă suplimentară · ~3 săptămâni
 
 Detalii: [Tema_3/README.md](Tema_3/README.md)
 
@@ -66,12 +66,12 @@ Detalii: [Tema_3/README.md](Tema_3/README.md)
 ## Ce nu este pe GitHub
 
 - Arhive `.zip` / `.rar`
-- Folderul complet **gfx-framework** (motorul cursului â€” doar sursele mele Tema 2/3)
+- Folderul complet **gfx-framework** (motorul cursului — doar sursele mele pentru Tema 2/3)
 - Build-uri Visual Studio (`build/`, `.vs/`), executabile
-- `IMPORTANT.txt` È™i note personale locale
+- `IMPORTANT.txt` și note personale locale
 
 ---
 
-## LicenÈ›Äƒ
+## Licență
 
-Cod propriu â€” teme academice **UPB ACS / EGC**. PoÈ›i folosi repo-ul ca portofoliu; menÈ›ioneazÄƒ cursul dacÄƒ refoloseÈ™ti structura.
+Cod propriu — teme academice **UPB ACS / EGC**. Poți folosi repo-ul ca portofoliu; menționează cursul dacă refolosești structura.
